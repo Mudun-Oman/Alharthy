@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al Harthy Investment</title>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/Al Harthy logo.png" alt="Logo" />
+    </div>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown" id="dropdown">
+          <a href="#" id="dropdownToggle">Services <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="https://www.mudun.om/" target="_blank">Real Estate</a></li>
+            <li><a href="it_section.html">IT Solutions</a></li>
+            <li><a href="general_trd.html">General Trading</a></li>
+            <li><a href="https://www.finnvesto.com/" target="_blank">Financil Consulting</a></li>
+            <li><a href="https://www.alharthyshipping.com/" target="_blank">Shipping & Logistics</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-email">
+      info@alharthy.com
+    </div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="bg-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="text-reveal">
+      <h1 class="hero-title">
+        <span class="word">AL</span>
+        <span class="word">HARTHY</span>
+        <span class="word">INVESTMENTS</span>
+        <span class="word">LLC</span>
+      </h1>
+      <div class="bars">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="established-text">Established in 1997</div>
+  </section>
+
+
+<section class="about-section">
+  <div class="about-image">
+    <img src="img/about.png" alt="About us image" />
+  </div>
+  <div class="about-text">
+    <p class="about-subtitle">About <em>Us</em></p>
+    <h2 class="about-title">AL Harthy Investments LLC</h2>
+    <p class="about-description">
+      Al Harthy Investments LLC, established in 1997 and based in Muscat, Oman, is a diversified business group with operations across the region.
+      The company focuses on key sectors including information technology, real estate development, media, general trading, 
+      and business process outsourcing (BPO) for the banking and finance sector. With a commitment to innovation, integrity, and excellence, 
+      Al Harthy Investments delivers integrated solutions through its specialized subsidiaries. Backed by experienced leadership and 
+      a client-focused approach, the group is a trusted partner in driving sustainable business growth across the region.
+    </p>
+    <a href="#positioning" class="about-link">
+      Learn more about us <span class="plus">+</span>
+    </a>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-header">
+    <h2>Our Services</h2>
+    <div class="subtitle-row">
+      <p>Why us ?</p>
+      <div class="arrow-nav">
+        <button onclick="scrollCards(-1)">
+          <svg viewBox="0 0 20 20"><path d="M13 15l-5-5 5-5"/></svg>
+        </button>
+        <button onclick="scrollCards(1)">
+          <svg viewBox="0 0 20 20"><path d="M7 5l5 5-5 5"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container" id="cardContainer">
+    <div class="card">
+      <h3>Real Estate Development & Leasing</h3>
+      <p>AHI delivers exceptional real estate development and premium, flexible leasing solutions by creating innovative,
+         sustainable spaces in prime locations that foster growth, value, and vibrant communities, all with a focus on quality,
+          convenience, and long-term innovation. With a steadfast commitment to excellence, AHI transforms real estate through forward-thinking
+           design and strategic leasing, empowering both businesses and individuals to thrive in high-value, future-ready environments.</p>
+      <a class="learn-more" href="#">Learn more +</a>
+    </div>
+    <div class="card">
+      <h3>IT Solutions</h3>
+      <p>AHI IT delivers innovative, high-quality solutions across software development, cybersecurity, cloud computing, automation, 
+        embedded systems integration, and enterprise mobility. Our offerings are enhanced by cutting-edge AI integration in every sector,
+         enabling smarter, faster, and more adaptive technologies. Backed by experienced leadership and a globally distributed,
+          AGILE-driven delivery model, AHI IT empowers businesses with future-ready, intelligent solutions.</p>
+      <a class="learn-more" href="#">Learn more +</a>
+    </div>
+    <div class="card">
+      <h3>General Trading</h3>
+      <p>AHI Trading Services supplies high-quality oil field equipment to oil and gas producers, drilling contractors, and service companies, 
+        ensuring safe and efficient solutions tailored to industry demands. In addition to our specialization in the energy sector, 
+        AHI is also engaged in general trading, offering a wide range of industrial products, machinery, and materials across sectors including construction, 
+        manufacturing, and infrastructure delivering reliable, timely, and cost-effective sourcing solutions to meet diverse business needs.</p>
+      <a class="learn-more" href="#">Learn more +</a>
+    </div>
+    <div class="card">
+      <h3>Financial Consulting</h3>
+      <p>It offers technology-driven solutions in investment, business outsourcing, financial well-being, AI-powered tools, and risk management—enhanced by automation,
+         analytics, and digital innovation to drive sustainable growth, streamline operations, optimize decision-making, and strengthen financial 
+         resilience in a competitive market. With a client-centric approach, Finnvesto delivers tailored strategies that adapt to evolving business needs and unlock long-term value.</p>
+      <a class="learn-more" href="#">Learn more +</a>
+    </div>
+    <div class="card">
+      <h3>Shipping & Logistics</h3>
+      <p>AHI Shipping & Logistics specializes in shipping and logistics, providing efficient, reliable, and cost-effective sea freight solutions. With a strong focus on streamlined transportation, we ensure smooth cargo movement across global markets, supporting international trade and optimizing supply chains. Our experienced team and global network enable us to deliver tailored logistics solutions that meet the unique needs of our clients.</p>
+      <a class="learn-more" href="#">Learn more +</a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>AL Harthy <span class="italic">Investments LLC</span></h2>
+      <img src="img/Al Harthy logo.png" alt="Charte de la diversité signataire">
+      
+    </div>
+    <div class="footer-right">
+      <div class="footer-text">
+       
+        <div class="footer-links">
+          <ul>
+             <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Servies</a></li>
+            <li><a href="#">Contact</a></li>
+           
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">App Privacy</a></li>
+          </ul>
+          <div class="contact-info">
+            <p>4th Floor Ibra house<br>Qurum, Muscat<br>Sultante of Oman <br> info@alharthy.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="footer-bottom-left">
+    <span>© Al Harthy Investments LLC</span>
+    <!-- <a href="#">Privacy policy</a> -->
+  </div>
+  <div class="footer-bottom-right">
+    <span>By AHI IT</span>
+  </div>
+</div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
