@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Harthy Investments</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;              /* ✅ fixed navbar height */
+      padding: 0 50px;           /* ✅ remove vertical padding */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;       /* ✅ keeps all items centered */
+        z-index: 1000;
+    background: transparent;
+  }
+
+    .logo {
+      display: flex;
+      align-items: center;   /* ✅ keeps text vertically centered with logo */
+      gap: 10px;
+    }
+
+   .logo img {
+    max-height: 90%;          /* ✅ logo will fit inside navbar height */
+    width: 190px;
+    margin-top: 20px;
+    object-fit: contain;       /* ✅ avoids stretching */
+  }
+
+    .logo span {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;   /* ✅ keeps Invest + menu centered regardless of logo */
+      gap: 20px;
+    }
+
+    .btn {
+      background: #164734;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      background: #0e2e22;
+    }
+
+    .menu {
+      font-size: 28px;
+      cursor: pointer;
+      line-height: 1;   /* ✅ avoids shifting */
+    }
+
+    /* Sidebar Menu */
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color:transparent;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      z-index: 2000;
+    }
+
+    .side-menu a {
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .side-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 36px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('/img/ahi_land.png') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .scroll-down {
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      border-top: 1px solid #fff;
+      padding-top: 10px;
+      transition: 0.3s;
+    }
+
+    .scroll-down:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Al-Harthy Investments Logo"> 
+     
+    </div>
+    <div class="nav-right">
+      <a href="#invest" class="btn">Invest</a>
+      <div class="menu" id="menu-btn">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu -->
+  <nav id="side-menu" class="side-menu">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Diversified Strength,<br>United Success.</h1>
+      <a href="home.html" class="scroll-down">Explore ↓</a>
+    </div>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const closeBtn = document.getElementById("close-btn");
+    const sideMenu = document.getElementById("side-menu");
+
+    menuBtn.addEventListener("click", () => {
+      sideMenu.style.width = "250px";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      sideMenu.style.width = "0";
+    });
+  </script>
+</body>
+</html>

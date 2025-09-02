@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al Harthy Investment</title>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="img/Al Harthy logo.png" alt="Logo" />
+    </div>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown" id="dropdown">
+          <a href="#" id="dropdownToggle">Services <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="https://www.mudun.om/" target="_blank">Real Estate</a></li>
+            <li><a href="it_section.html">IT Solutions</a></li>
+            <li><a href="general_trd.html">Business Outsourcing</a></li>
+            <li><a href="https://www.finnvesto.com/" target="_blank">UNO</a></li>
+            <li><a href="https://www.alharthyshipping.com/" target="_blank">Shipping & Logistics</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact-email">
+      info@alharthy.com
+    </div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="bg-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="text-reveal">
+      <h1 class="hero-title">
+        <span class="word">AL</span>
+        <span class="word">HARTHY</span>
+        <span class="word">INVESTMENTS</span>
+        <span class="word">LLC</span>
+      </h1>
+      <div class="bars">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="established-text">Established in 1997</div>
+  </section>
+
+<section class="about-section" id="about">
+  <div class="about-text">
+    <h2 class="about-title">About AHI</h2>
+    <p class="about-description"  >
+      Al-Harthy Investments is a diversified holding company with strategic investments across high-growth sectors including Real Estate Development, Business Process Outsourcing, IT & Technology Solutions, Out-of-Home Media, and Shipping & Logistics.
+As a visionary investment leader, we combine deep sector expertise with market intelligence to identify and scale high-potential opportunities. Our real estate division delivers premium commercial and residential developments that redefine urban landscapes. Through our business outsourcing services, we enable operational excellence for global enterprises, while our technology arm drives digital transformation through innovative IT solutions. Our media portfolio connects brands with audiences through strategic OOH placements, and our shipping & logistics operations facilitate seamless global trade.
+
+
+    </p>
+    <p class="about-description">
+     Guided by principles of innovation, sustainability, and value creation, we partner with investors and industry leaders to build future-ready businesses that deliver lasting impact and superior returns across all our verticals
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="img/about.png" alt="About us image" />
+  </div>
+</section>
+
+<style>
+/* Section Layout */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  gap: 3rem;
+background: url('https://www.transparenttextures.com/patterns/cubes.png'), #f9f9f9;
+  flex-wrap: wrap;
+}
+
+/* Text */
+.about-text {
+  flex: 1 1 50%;
+}
+
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #3A3A1F;
+}
+
+.about-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3A3A1F;
+  text-align: justify;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+/* Image */
+.about-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px; /* rounded corners */
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+}
+</style>
+
+<section class="mission-vision">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Our <span class="highlight">Mission</span> & <span class="highlight">Vision</span></h2>
+      <div class="yellow-bar"></div>
+    </div>
+
+    <div class="mv-content">
+      <div class="mission">
+        <h3>Mission</h3>
+        <p>
+         We empower progress through diversified investments, strategic partnerships, and unwavering commitment to excellence—building sustainable success for our clients and communities
+        </p>
+      </div>
+      <div class="vision">
+        <h3>Vision</h3>
+        <p>
+         A trusted driver of transformative growth and value creation
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Services Section Start ========== -->
+<!-- ====== Services Section Start ====== -->
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="service-grid">
+      
+      <!-- Service 1 -->
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-building"></i></div>
+        <h3>Real Estate</h3>
+        <h4>Mudun</h4>
+        <p>
+          Pioneers transformative real estate development, blending innovation 
+          and sustainability to craft dynamic spaces that redefine urban living. 
+          By prioritizing cutting-edge design, enduring quality, and 
+          community-centric solutions, we deliver lasting value while shaping 
+          the future of thriving, connected neighborhoods.
+        </p>
+        <a href="https://www.mudun.om/" target="_blank" class="learn-more">Learn More +</a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Business Outsourcing</h3>
+        <h4>Finnvesto</h4>
+        <p>
+          Dedicated to revolutionizing the banking and digital landscape in Oman 
+          through expert outsourcing and technology solutions. Leveraging deep 
+          expertise and advanced IT, we help institutions achieve operational 
+          excellence, reduce costs, and unlock growth opportunities.
+        </p>
+        <a href="https://www.finnvesto.com/" target="_blank" class="learn-more">Learn More +</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>IT & Technology Solutions</h3>
+        <h4>Al Harthy Tech</h4>
+        <p>
+          Driving digital transformation through software development, 
+          cybersecurity, cloud computing, and automation. With AGILE-driven 
+          delivery, we empower businesses worldwide with scalable, secure, 
+          and innovative technology solutions.
+        </p>
+        <a href="#" class="learn-more">Learn More +</a>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-ship"></i></div>
+        <h3>Shipping & Logistics</h3>
+        <h4>AI Harthy Shipping</h4>
+        <p>
+          A trusted player in global maritime transport, delivering secure, 
+          efficient, and optimized freight solutions. Leveraging logistics 
+          expertise and customer-first service, we ensure seamless supply chain 
+          operations worldwide.
+        </p>
+        <a href="https://www.alharthyshipping.com/" target="_blank" class="learn-more">Learn More +</a>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-bullhorn"></i></div>
+        <h3>Out of Home (OOH) Media</h3>
+        <h4>UNO</h4>
+        <p>
+          Innovative outdoor advertising solutions designed to maximize brand 
+          visibility and impact. From billboards to digital signage, we provide 
+          creative campaigns that capture attention and drive engagement.
+        </p>
+        <a href="#" class="learn-more">Learn More +</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ====== Services Section End ====== -->
+
+<!-- ========== Services Section End ========== -->
+
+
+<style>
+  .services {
+  padding: 80px 20px;
+background: url('https://www.transparenttextures.com/patterns/cubes.png'), #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #3A3A1F;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #3A3A1F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #3A3A1F;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #3A3A1F;
+}
+
+.service-card h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 6px 0 12px;
+  color: #666;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3A3A1F;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+</style>
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>AL Harthy <span class="italic">Investments LLC</span></h2>
+      <img src="img/Al Harthy logo.png" alt="Charte de la diversité signataire">
+      
+    </div>
+    <div class="footer-right">
+      <div class="footer-text">
+       
+        <div class="footer-links">
+          <ul>
+             <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Servies</a></li>
+            <li><a href="#">Contact</a></li>
+           
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">App Privacy</a></li>
+          </ul>
+          <div class="contact-info">
+            <p>4th Floor Ibra house<br>Qurum, Muscat<br>Sultante of Oman <br> info@alharthy.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="footer-bottom-left">
+    <span>© Al Harthy Investments LLC</span>
+    <!-- <a href="#">Privacy policy</a> -->
+  </div>
+  <div class="footer-bottom-right">
+    <span>By AHI IT</span>
+  </div>
+</div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
